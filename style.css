@@ -1,109 +1,115 @@
 #img_h{
-  width: 60px;
-  padding-top:8px;
+  width: 150px;
   float: left;
 }
-
-header, footer {
- background-color: #38b6ff;
- padding: 10px;
+header,footer{
+  background-color:#fffeba;
+  padding: 60px;
 }
-main {
- padding: 10px;
- background-color: silver;
-}
-.post {
- background-color: white;
- padding: 20px;
- border-radius: 10px;
- margin-bottom: 20px;
- display: flex;
-}
-.post img {
- margin: 20px;
-}
-.footer-columns {
- display: flex;
-}
-.footer-column {
- flex: 50%;
- margin: 20px;
-}
-.comment {
- background-color: white;
- padding: 20px;
- border-radius: 10px;
- margin-top: 10px;
-}
-.author {
- margin-top: 0px;
- margin-bottom: 10px;
-}
-.date {
- color: silver;
- margin-top: 0px;
- margin-bottom: 10px;
+main{
+  padding: 15px;
+   background-color: #87bbff;
 }
 
+.post{
+  
+  padding: 30px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.post img{
+  margin: 20px;
+}
+.comment{
+  background-color:#ffffff;
+  padding: 40px;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+.author{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.date{
+  color:#f71b1b;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+h1{
+  color:#5cd424;
+  margin: 40px;
+}                                   c3{
+    float: left;
+  width:40%;
+  background-color: silver;
+  border-radius: 20px;
+  }                                   c2{
+   float: right;
+  width:30%;
+   background-color: #ccffe9;
+    border-radius: 20px;
+}  
+c1{
+  width:30%;
+  float: right;
+  background-color: #ffe4e3;
+  border-radius: 20px;
+  }
 #menu1{
- position: relative; /*Положение элемента устанавливается относительно его исходного места*/
- display: block;     /*Элемент показывается как блочный*/
+ position: relative;
+ display: block;
  width: 100%;
  height: auto;
  z-index: 10;
 }
-
 #menu1 ul{
  position: relative;
  display: block;
- margin: 0px;      /*Устанавливает величину отступа от каждого края элемента*/
- padding: 0px;     /*Устанавливает значение полей вокруг содержимого элемента*/
+ margin: 0px;
+ padding: 0px;
  width: 100%;
  height: auto;
  list-style: none;
 }
-
-#menu1 > ul::after{ /*используется для вывода желаемого текста после содержимого элемента*/
+#menu1 > ul::after{
  display: block;
  width: 100%;
  height: 0px;
- clear: both;     /*Отменяет обтекание элемента одновременно с правого и левого края*/
+ clear: both;
  content: " ";
 }
 #menu1 ul li{
  position: relative;
  display: block;
- float: left;     /*Выравнивает элемент по левому краю*/
+ float: right;
  width: auto;
  height: auto;
 }
 #menu1 ul li a{
  display: block;
- padding: 9px 25px 0px 25px;
+ padding: 0px 25px 0px 25px;
  font-size: 14px;
  line-height: 1.3em;
  text-decoration: none;
  font-weight: bold;
- text-transform: uppercase; /*Все символы текста становятся прописными (верхний регистр)*/
+ text-transform: uppercase;
  height: 36px;
- box-sizing: border-box; /*Свойства width и height включают в себя значения полей и границ, но не отступов (margin)*/
- color: white;
+  box-sizing: border-box;
+ color: #9942f5;
 }
 #menu1 ul li ul{
- position: absolute; /*Указывает, что элемент абсолютно позиционирован, 
-                      при этом другие элементы отображаются на веб-странице 
-					  словно абсолютно позиционированного элемента и нет*/
- top: 36px;
+ position: absolute;
+ top: 40px;
  left: 0px;
  display: none;
  width: 200px;
- background: #38b6ff;
+ background:#c5f542;
 }
-#menu1 ul li:hover ul{ /*Определяет стиль элемента при наведении на него курсора мыши*/
+#menu1 ul li:hover ul{
  display: block;
 }
 #menu1 ul li ul li{
- float: none;   /*Обтекание элемента не задается*/
+ float: none;
  width: 100%;
 }
 #menu1 ul li ul li a{
@@ -114,18 +120,8 @@ main {
  width: 100%;
  box-sizing: border-box;
  border-top: 1px solid #ffffff;
- color: white;
+ color: #42daf5;
 }
-#menu1 ul li ul li:first-child a{ /*рименяет стилевое оформление к первому дочернему элементу своего родителя*/
+#menu1 ul li ul li:first-child a{
  border-top: 0px;
-}
-/*стилі для зображення в плагіні*/
-.carousele{
- margin: 10px;
-}
-.carousele div img{
- width: 100%
-}
-a{
-	font-family: 'Poppins', sans-serif;
 }
